@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-Mona: "Mona Sans", sans-serif;
+  --font-modern-negra: "Modern Negra", sans-serif;
+  --font-serif: "DM Serif Text", serif;
+  --font-ole: "Ole", cursive;
+  --font-dancing: "Dancing Script", cursive;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@utility text-gradient{
+  background: linearGradient(to bottom , #ffffff, #898989);
+  background-clip: text;
+  color: transparent;
+}
+
+@utility flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@layer components{
+  .title{
+    @apply text-center font-modern-negra text-8xl mt-20
+  }
+  .body{
+    @apply flex justify-between w-full
+  }
+  .subtitle{
+    @apply z-10
+  }
+  
+}
+
+
